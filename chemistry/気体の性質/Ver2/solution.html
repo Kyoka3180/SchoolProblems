@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>気体の性質 - 解説 (Ver2)</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        .solution-block { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        h1, h2 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+        .problem-number { font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
+        .problem-statement { background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
+        .answer { font-weight: bold; color: #d32f2f; }
+        .explanation { margin-top: 10px; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; }
+        @media print {
+            body { font-size: 12pt; }
+            .container { width: 100%; margin: 0; padding: 0; }
+            .solution-block { border: none; page-break-inside: avoid; }
+            h1, h2 { border-bottom: 1px solid #000; }
+            .answer { color: #000; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>気体の性質 - 解説 (Ver2)</h1>
+
+        <div class="solution-block">
+            <div class="problem-number">問題1</div>
+            <div class="explanation">
+                <p>温度が一定なので、ボイルの法則 <code>P₁V₁ = P₂V₂</code> を用います。</p>
+                <ul>
+                    <li>P₁ = 1.0 × 10<sup>5</sup> Pa, V₁ = 2.0 L</li>
+                    <li>P₂ = ?, V₂ = 0.50 L</li>
+                </ul>
+                <p><code>(1.0 × 10⁵ Pa) × 2.0 L = P₂ × 0.50 L</code></p>
+                <p><code>P₂ = (1.0 × 10⁵ × 2.0) / 0.50 = 4.0 × 10⁵ Pa</code></p>
+            </div>
+            <p class="answer">答え: 4.0 × 10⁵ Pa</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題2</div>
+            <div class="explanation">
+                <p>圧力が一定なので、シャルルの法則 <code>V₁/T₁ = V₂/T₂</code> を用います。温度は絶対温度(K)に変換します。</p>
+                <ul>
+                    <li>V₁ = 3.0 L, T₁ = 27 + 273 = 300 K</li>
+                    <li>V₂ = ?, T₂ = 127 + 273 = 400 K</li>
+                </ul>
+                <p><code>3.0 L / 300 K = V₂ / 400 K</code></p>
+                <p><code>V₂ = (3.0 × 400) / 300 = 4.0 L</code></p>
+            </div>
+            <p class="answer">答え: 4.0 L</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題3</div>
+            <div class="explanation">
+                <p>ボイル・シャルルの法則 <code>(P₁V₁)/T₁ = (P₂V₂)/T₂</code> を用います。温度は絶対温度(K)に変換します。</p>
+                <ul>
+                    <li>P₁ = 1.00 × 10<sup>5</sup> Pa, V₁ = 300 mL, T₁ = 27 + 273 = 300 K</li>
+                    <li>P₂ = 1.013 × 10<sup>5</sup> Pa, V₂ = ?, T₂ = 0 + 273 = 273 K</li>
+                </ul>
+                <p><code>(1.00 × 10⁵ × 300) / 300 = (1.013 × 10⁵ × V₂) / 273</code></p>
+                <p><code>V₂ = (1.00 × 10⁵ × 300 × 273) / (300 × 1.013 × 10⁵) = 269.49... mL</code></p>
+            </div>
+            <p class="answer">答え: 269 mL</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題4</div>
+            <div class="explanation">
+                <p>気体の状態方程式 <code>PV = nRT</code> を変形し、<code>n = PV / (RT)</code> で物質量を求めます。</p>
+                <ul>
+                    <li>P = 2.49 × 10<sup>5</sup> Pa, V = 10.0 L, T = 77 + 273 = 350 K, R = 8.3 × 10<sup>3</sup></li>
+                </ul>
+                <p><code>n = (2.49 × 10⁵ × 10.0) / (8.3 × 10³ × 350) = 0.858... mol</code></p>
+            </div>
+            <p class="answer">答え: 0.86 mol</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題5</div>
+            <div class="explanation">
+                <p>気体の状態方程式 <code>PV = nRT</code> と <code>n = w/M</code> (w:質量, M:分子量) を組み合わせ、<code>M = wRT / (PV)</code>で分子量を求めます。</p>
+                <ul>
+                    <li>w = 1.1 g, P = 1.0 × 10<sup>5</sup> Pa, V = 0.415 L, T = 87 + 273 = 360 K, R = 8.3 × 10<sup>3</sup></li>
+                </ul>
+                <p><code>M = (1.1 × 8.3 × 10³ × 360) / (1.0 × 10⁵ × 0.415) = 79.1... g/mol</code></p>
+            </div>
+            <p class="answer">答え: 79 g/mol</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題6</div>
+            <div class="explanation">
+                <p>分子量 M は、モル質量（1 molあたりの質量）に等しいです。標準状態では、1 molの気体は22.4 Lの体積を占めます。密度が1.25 g/Lなので、22.4 L分の質量を計算します。</p>
+                <p><code>M = 密度 × モル体積 = 1.25 g/L × 22.4 L/mol = 28 g/mol</code></p>
+            </div>
+            <p class="answer">答え: 28 g/mol</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題7</div>
+            <div class="explanation">
+                <p>混合後の全体の体積は 2.0 L + 3.0 L = 5.0 L です。各気体の分圧はボイルの法則で求めます。</p>
+                <p><b>アルゴンの分圧 (P<sub>Ar</sub>):</b> <code>(2.0 × 10⁵ Pa) × 2.0 L = P<sub>Ar</sub> × 5.0 L</code> → <code>P<sub>Ar</sub> = 8.0 × 10⁴ Pa</code></p>
+                <p><b>ネオンの分圧 (P<sub>Ne</sub>):</b> <code>(4.0 × 10⁵ Pa) × 3.0 L = P<sub>Ne</sub> × 5.0 L</code> → <code>P<sub>Ne</sub> = 2.4 × 10⁵ Pa</code></p>
+                <p><b>全圧 (P<sub>total</sub>):</b> <code>P<sub>total</sub> = P<sub>Ar</sub> + P<sub>Ne</sub> = 8.0 × 10⁴ Pa + 2.4 × 10⁵ Pa = 3.2 × 10⁵ Pa</code></p>
+            </div>
+            <p class="answer">答え: アルゴンの分圧: 8.0 × 10⁴ Pa, 全圧: 3.2 × 10⁵ Pa</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題8</div>
+            <div class="explanation">
+                <p>まず各気体の物質量を求めます。N₂の分子量は28, O₂の分子量は32です。</p>
+                <p>n(N₂) = 5.6 g / 28 g/mol = 0.20 mol</p>
+                <p>n(O₂) = 6.4 g / 32 g/mol = 0.20 mol</p>
+                <p>各気体の分圧を状態方程式で求めます。T = 27 + 273 = 300 K。</p>
+                <p><b>窒素の分圧 (P<sub>N₂</sub>):</b> <code>P<sub>N₂</sub> = n(N₂)RT / V = (0.20 × 8.3 × 10³ × 300) / 10.0 = 4.98 × 10⁴ Pa</code></p>
+                <p><b>全圧 (P<sub>total</sub>):</b> 全物質量は 0.20 + 0.20 = 0.40 mol。全圧は分圧の合計、または全物質量から計算します。窒素と酸素の物質量が同じなので、酸素の分圧も窒素と同じです。<br><code>P<sub>total</sub> = P<sub>N₂</sub> + P<sub>O₂</sub> = 4.98 × 10⁴ + 4.98 × 10⁴ = 9.96 × 10⁴ Pa</code></p>
+            </div>
+            <p class="answer">答え: 窒素の分圧: 5.0 × 10⁴ Pa, 全圧: 1.0 × 10⁵ Pa</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題9</div>
+            <div class="explanation">
+                <p>1. 反応式: <code>Zn + H₂SO₄ → ZnSO₄ + H₂</code>。亜鉛1.3 gの物質量は 1.3 g / 65 g/mol = 0.020 mol。反応により水素も0.020 mol発生します。</p>
+                <p>2. 水素の分圧を求めます: <code>P(H₂) = 大気圧 - 水蒸気圧 = 1.00 × 10⁵ - 4.0 × 10³ = 0.96 × 10⁵ Pa</code></p>
+                <p>3. 状態方程式 <code>PV=nRT</code> をVについて解きます: <code>V = nRT / P</code>。</p>
+                <p><code>V = (0.020 mol × 8.3 × 10³ Pa・L/(K・mol) × 300 K) / (0.96 × 10⁵ Pa) = 0.51875 L</code></p>
+            </div>
+            <p class="answer">答え: 0.52 L</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題10</div>
+            <div class="explanation">
+                <p>1. 燃焼の化学反応式: <code>C₃H₈ + 5O₂ → 3CO₂ + 4H₂O</code>。気体の反応なので、体積比は係数比に等しいです。</p>
+                <p>2. 反応量の計算:<br>
+                ・反応前: C₃H₈=10mL, O₂=100mL<br>
+                ・反応: C₃H₈ 10mLに対し、O₂がその5倍の50mL反応し、CO₂が3倍の30mL生成します。(水は液体と考えるのが一般的ですが、ここでは温度・圧力が一定なので気体として扱います。H₂Oは4倍の40mL生成)<br>
+                ・反応後: C₃H₈=0mL, O₂=100-50=50mL, CO₂=30mL, H₂O(気体)=40mL</p>
+                <p>3. 反応後の総体積: <code>50mL (O₂) + 30mL (CO₂) + 40mL (H₂O) = 120 mL</code></p>
+                <p>4. NaOH水溶液通過後: CO₂(酸性気体)のみ吸収されます。残る気体はO₂とH₂O(気体)です。
+                <code>50mL (O₂) + 40mL (H₂O) = 90 mL</code><br>
+                (注: 通常、反応後の体積は室温に戻して考えるため水は液体となり、H₂Oの体積は無視します。その場合、総体積は80mL、NaOH通過後は50mLとなりますが、ここでは問題文の「反応前後の温度と圧力は一定」に従い、水も気体として計算します。)</p>
+            </div>
+            <p class="answer">答え: 反応後の総体積: 120 mL, NaOH水溶液通過後の体積: 90 mL</p>
+        </div>
+    </div>
+</body>
+</html>

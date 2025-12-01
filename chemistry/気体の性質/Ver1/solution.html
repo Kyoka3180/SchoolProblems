@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>気体の性質 - 解説</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        .solution-block { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        h1, h2 { border-bottom: 2px solid #333; padding-bottom: 10px; }
+        .problem-number { font-weight: bold; font-size: 1.2em; margin-bottom: 10px; }
+        .problem-statement { background-color: #f9f9f9; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
+        .answer { font-weight: bold; color: #d32f2f; }
+        .explanation { margin-top: 10px; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; }
+        @media print {
+            body { font-size: 12pt; }
+            .container { width: 100%; margin: 0; padding: 0; }
+            .solution-block { border: none; page-break-inside: avoid; }
+            h1, h2 { border-bottom: 1px solid #000; }
+            .answer { color: #000; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>気体の性質 - 解説</h1>
+
+        <div class="solution-block">
+            <div class="problem-number">問題1</div>
+            <div class="problem-statement">
+                <p>27℃, 1.0 × 10<sup>5</sup> Paで6.0 Lの体積を占める気体を、温度を77℃, 圧力を2.0 × 10<sup>5</sup> Paにすると、体積は何Lになるか。有効数字2桁で答えよ。</p>
+            </div>
+            <div class="explanation">
+                <p>ボイル・シャルルの法則 <code>(P₁V₁)/T₁ = (P₂V₂)/T₂</code> を用います。温度は絶対温度(K)に変換することを忘れないようにしましょう。絶対温度 T (K) = セルシウス温度 t (℃) + 273 です。</p>
+                <ul>
+                    <li>変換前の状態 (1): P₁ = 1.0 × 10<sup>5</sup> Pa, V₁ = 6.0 L, T₁ = 27 + 273 = 300 K</li>
+                    <li>変換後の状態 (2): P₂ = 2.0 × 10<sup>5</sup> Pa, V₂ = ?, T₂ = 77 + 273 = 350 K</li>
+                </ul>
+                <p>式に値を代入してV₂を求めます。</p>
+                <p><code>(1.0 × 10⁵ Pa × 6.0 L) / 300 K = (2.0 × 10⁵ Pa × V₂) / 350 K</code></p>
+                <p><code>V₂ = (1.0 × 10⁵ × 6.0 × 350) / (300 × 2.0 × 10⁵) = 3.5 L</code></p>
+            </div>
+            <p class="answer">答え: 3.5 L</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題2</div>
+            <div class="problem-statement">
+                <p>27℃, 1.0 × 10<sup>5</sup> Paで8.3 Lの体積を占める理想気体の物質量は何molか。ただし、気体定数Rを 8.3 × 10<sup>3</sup> Pa・L/(K・mol) とする。有効数字2桁で答えよ。</p>
+            </div>
+            <div class="explanation">
+                <p>気体の状態方程式 <code>PV = nRT</code> を用いて、物質量nを求めます。式を変形すると <code>n = PV / (RT)</code> となります。</p>
+                <ul>
+                    <li>P = 1.0 × 10<sup>5</sup> Pa</li>
+                    <li>V = 8.3 L</li>
+                    <li>R = 8.3 × 10<sup>3</sup> Pa・L/(K・mol)</li>
+                    <li>T = 27 + 273 = 300 K</li>
+                </ul>
+                <p><code>n = (1.0 × 10⁵ Pa × 8.3 L) / (8.3 × 10³ Pa・L/(K・mol) × 300 K)</code></p>
+                <p><code>n = 100 / 300 = 1/3 ≈ 0.333... mol</code></p>
+            </div>
+            <p class="answer">答え: 0.33 mol</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題3</div>
+            <div class="problem-statement">
+                <p>ある理想気体4.0 gを27℃, 1.0 × 10<sup>5</sup> Paの条件下で測定したところ、体積は3.32 Lであった。この気体の分子量を求めよ。ただし、気体定数Rを 8.3 × 10<sup>3</sup> Pa・L/(K・mol) とする。有効数字2桁で答えよ。</p>
+            </div>
+            <div class="explanation">
+                <p>気体の状態方程式 <code>PV = nRT</code> と、物質量nと質量w, 分子量Mの関係式 <code>n = w / M</code> を組み合わせます。</p>
+                <p><code>PV = (w/M)RT</code> となり、これをMについて解くと <code>M = wRT / (PV)</code> となります。</p>
+                <ul>
+                    <li>w = 4.0 g</li>
+                    <li>R = 8.3 × 10<sup>3</sup> Pa・L/(K・mol)</li>
+                    <li>T = 27 + 273 = 300 K</li>
+                    <li>P = 1.0 × 10<sup>5</sup> Pa</li>
+                    <li>V = 3.32 L</li>
+                </ul>
+                <p><code>M = (4.0 g × 8.3 × 10³ Pa・L/(K・mol) × 300 K) / (1.0 × 10⁵ Pa × 3.32 L)</code></p>
+                <p><code>M = (4.0 × 8.3 × 300 × 10³) / (3.32 × 10⁵) ≈ 30.0 g/mol</code></p>
+            </div>
+            <p class="answer">答え: 30 g/mol</p>
+        </div>
+
+        <div class="solution-block">
+            <div class="problem-number">問題4</div>
+            <div class="problem-statement">
+                 <p>温度を一定に保ち、3.0 Lの容器に入った2.0 × 10<sup>5</sup> Paの窒素と、2.0 Lの容器に入った4.5 × 10<sup>5</sup> Paの酸素を、コックを開けて混合した。混合後の気体の全圧と、窒素の分圧はそれぞれ何Paか。有効数字2桁で答えよ。</p>
+            </div>
+            <div class="explanation">
+                <p>ドルトンの分圧の法則を用います。混合後の全体の体積は 3.0 L + 2.0 L = 5.0 L となります。</p>
+                <p>各気体の分圧は、ボイルの法則 <code>P₁V₁ = P₂V₂</code> を使って求めることができます。</p>
+                <p><b>窒素の分圧 (P<sub>N₂</sub>):</b><br>
+                <code>(2.0 × 10⁵ Pa) × 3.0 L = P<sub>N₂</sub> × 5.0 L</code><br>
+                <code>P<sub>N₂</sub> = (2.0 × 10⁵ × 3.0) / 5.0 = 1.2 × 10⁵ Pa</code></p>
+                <p><b>酸素の分圧 (P<sub>O₂</sub>):</b><br>
+                <code>(4.5 × 10⁵ Pa) × 2.0 L = P<sub>O₂</sub> × 5.0 L</code><br>
+                <code>P<sub>O₂</sub> = (4.5 × 10⁵ × 2.0) / 5.0 = 1.8 × 10⁵ Pa</code></p>
+                <p><b>全圧 (P<sub>total</sub>):</b><br>
+                全圧は各気体の分圧の和です。<br>
+                <code>P<sub>total</sub> = P<sub>N₂</sub> + P<sub>O₂</sub> = 1.2 × 10⁵ Pa + 1.8 × 10⁵ Pa = 3.0 × 10⁵ Pa</code></p>
+            </div>
+            <p class="answer">答え: 全圧: 3.0 × 10⁵ Pa, 窒素の分圧: 1.2 × 10⁵ Pa</p>
+        </div>
+        
+        <div class="solution-block">
+            <div class="problem-number">問題5</div>
+            <div class="problem-statement">
+                <p>27℃, 大気圧 1.01 × 10<sup>5</sup> Paのもとで、ある気体を水上置換で捕集したところ、メスシリンダー内の気体の体積は500 mLであった。捕集した気体の物質量は何molか。ただし、27℃における水の飽和蒸気圧は 0.04 × 10<sup>5</sup> Pa、気体定数Rを 8.3 × 10<sup>3</sup> Pa・L/(K・mol) とする。有効数字2桁で答えよ。</p>
+            </div>
+            <div class="explanation">
+                <p>水上置換で捕集した気体は、目的の気体と水蒸気の混合気体です。ドルトンの分圧の法則により、<code>大気圧 = (目的の気体の分圧) + (水蒸気圧)</code> となります。</p>
+                <p>目的の気体の分圧 P<sub>gas</sub> は:<br>
+                <code>P<sub>gas</sub> = P<sub>atm</sub> - P<sub>H₂O</sub> = 1.01 × 10⁵ Pa - 0.04 × 10⁵ Pa = 0.97 × 10⁵ Pa</code></p>
+                <p>この分圧を使って、気体の状態方程式 <code>PV = nRT</code> から物質量nを求めます。</p>
+                <ul>
+                    <li>P = 0.97 × 10<sup>5</sup> Pa</li>
+                    <li>V = 500 mL = 0.50 L</li>
+                    <li>R = 8.3 × 10<sup>3</sup> Pa・L/(K・mol)</li>
+                    <li>T = 27 + 273 = 300 K</li>
+                </ul>
+                <p><code>n = (0.97 × 10⁵ Pa × 0.50 L) / (8.3 × 10³ Pa・L/(K・mol) × 300 K)</code></p>
+                <p><code>n ≈ 0.01947... mol</code></p>
+            </div>
+            <p class="answer">答え: 1.9 × 10⁻² mol</p>
+        </div>
+
+    </div>
+</body>
+</html>
