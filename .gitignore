@@ -1,2 +1,5 @@
-
+# mdファイルは非表示
 *.md
+
+# README.mdのみ表示
+!README.md
